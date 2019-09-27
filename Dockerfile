@@ -16,7 +16,7 @@ RUN set -x \
 	&& apt-get purge --auto-remove -y ca-certificates curl \
 	&& rm -rf /var/lib/apt/lists/*
 
-EXPOSE 8081
+EXPOSE 8080
 
 # override some config defaults with values that will work better for docker
 ENV ME_CONFIG_EDITORTHEME="default" \
